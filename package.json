@@ -1,0 +1,30 @@
+{
+  "name": "emitter-fsm",
+  "version": "0.0.1",
+  "description": "EventEmitter based finite state machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "state",
+    "machine"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yyx990803/emitter-fsm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yyx990803/emitter-fsm/issues"
+  },
+  "homepage": "https://github.com/yyx990803/emitter-fsm"
+}
