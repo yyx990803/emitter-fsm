@@ -1,6 +1,6 @@
 {
   "name": "emitter-fsm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "EventEmitter based finite state machine",
   "main": "index.js",
   "scripts": {
