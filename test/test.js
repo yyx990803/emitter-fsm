@@ -151,6 +151,7 @@ describe('History', function () {
         var emitted = false
         m.on('enter:a', function (e) {
             assert.equal(e.from, 'b')
+            assert.ok(e.back)
             assert.deepEqual(e.args, [1, 2, 3])
             emitted = true
         })

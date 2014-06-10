@@ -66,7 +66,7 @@ StateMachine.prototype.back = function () {
     this.history.pop()
     this.currentState = to
     this.currentArgs  = args
-    this._emit(from, to, args)
+    this._emit(from, to, args, true)
 
     return true
 
@@ -102,12 +102,13 @@ StateMachine.prototype.register = function (event, condition) {
 
 }
 
-StateMachine.prototype._emit = function (from, to, args) {
+StateMachine.prototype._emit = function (from, to, args, back) {
 
     var event = {
         from : from,
         to   : to,
-        args : args
+        args : args,
+        back : back
     }
 
     this.emit('transition', event)
